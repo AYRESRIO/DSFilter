@@ -1,0 +1,32 @@
+.DSF-form {
+  height: 200px;
+  margin-top: 20px;
+  background-color: var(--DSF-bg-tertiary);
+  border: 1px solid var(--DSF-color-secondary);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.DSF-input {
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  border: 1px solid var(--DSF-color-secondary);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: var(--DSF-color-secondary);
+  opacity: 1;
+}
+
+.DSF-button {
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  background-color: var(--DSF-bg-primary);
+  color: var(--DSF-color-primary);
+  border: 1px solid var(--DSF-color-secondary);
+  border-radius: 5px;
+  cursor: pointer;
+}

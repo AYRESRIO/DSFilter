@@ -1,5 +1,50 @@
-:root {
-  --DSF-color-primary:red;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --DSF-bg-primary: #55BC04;
+  --DSF-bg-secondary: #C2C2C2;
+  --DSF-bg-tertiary:   #FFFFFF;
+  --DSF-color-primary: #FFFFFF;
+  --DSF-color-secondary:#C2C2C2;;
+
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+    color: unset;
+  }
+  
+  html,
+  body {
+    background-color: var(--DSF-bg-secondary);
+  }
+  .DSF-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
 }
 
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+html,
+body {
+  background-color: var(-ct-color-bg-primary);
+}
