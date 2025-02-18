@@ -1,0 +1,26 @@
+.DSF-listing {
+  height:auto;
+  margin-top: 20px;
+  background-color: var(--DSF-bg-tertiary);
+  border: 1px solid var(--DSF-color-secondary);
+  border-radius: 5px;
+  
+}
+.DSF-listing-item {
+  width: 100%;
+  max-width: 920px;
+  height: 53px;
+  background-color: var(--DSF-bg-tertiary);
+  border: 1px solid var(--DSF-color-tertiary);
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+}
+.DSF-listing-fonts {
+  font-size: 12px;
+  color: var(--DSF-color-quaternary);
+}
+.DSF-listing-price {
+  font-size: 16px;
+  color: var(--DSF-color-tertiary);
+}

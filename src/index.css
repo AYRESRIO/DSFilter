@@ -6,6 +6,8 @@
   --DSF-bg-tertiary:   #FFFFFF;
   --DSF-color-primary: #FFFFFF;
   --DSF-color-secondary:#C2C2C2;;
+  --DSF-color-tertiary: #55BC04;
+  --DSF-color-quaternary: #6F6F6F;
 
 
     box-sizing: border-box;
