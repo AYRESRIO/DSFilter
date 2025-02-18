@@ -4,7 +4,6 @@
   background-color: var(--DSF-bg-tertiary);
   border: 1px solid var(--DSF-color-secondary);
   border-radius: 5px;
-  
 }
 .DSF-listing-item {
   width: 100%;
@@ -24,3 +23,4 @@
   font-size: 16px;
   color: var(--DSF-color-tertiary);
 }
+

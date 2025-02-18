@@ -1,14 +1,6 @@
 import "./App.css";
-import Filter from "./components/Filter";
-import Header from "./components/Header";
-import Listing from "./components/Listing";
+import ListingBody from "./routes/ListingBody";
 
 export default function App() {
-  return (
-    <>
-      <Header />
-      <Filter />
-      <Listing />
-    </>
-  );
+  return <ListingBody />;
 }
