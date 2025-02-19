@@ -1,62 +1,22 @@
+import { ProductDTO } from "../../models/product";
 import "./styles.css";
-export default function Listing() {
+
+type Props = {
+  product: ProductDTO;
+};
+
+export default function Listing({ product }: Props) {
   return (
     <>
-      <div className="DSF-container DSF-listing">
+      <div>
         <div className="DSF-listing-item">
           <div className="DSF-listing-fonts">
-            <p>PC Gamer Pro</p>
+            <p>{product.name}</p>
           </div>
           <div className="DSF-listing-price">
-            <h3>R$ 1200.00</h3>
+            <h3>R$ {product.price.toFixed(2)}</h3>
           </div>
         </div>
-
-        <div className="DSF-listing-item">
-          <div className="DSF-listing-fonts">
-            <p>PC Gamer Pro</p>
-          </div>
-          <div className="DSF-listing-price">
-            <h3>R$ 1200.00</h3>
-          </div>
-        </div>
-
-        <div className="DSF-listing-item">
-          <div className="DSF-listing-fonts">
-            <p>PC Gamer Pro</p>
-          </div>
-          <div className="DSF-listing-price">
-            <h3>R$ 1200.00</h3>
-          </div>
-        </div>
-
-        <div className="DSF-listing-item">
-          <div className="DSF-listing-fonts">
-            <p>PC Gamer Pro</p>
-          </div>
-          <div className="DSF-listing-price">
-            <h3>R$ 1200.00</h3>
-          </div>
-        </div>
-
-        <div className="DSF-listing-item">
-          <div className="DSF-listing-fonts">
-            <p>PC Gamer Pro</p>
-          </div>
-          <div className="DSF-listing-price">
-            <h3>R$ 1200.00</h3>
-          </div>
-        </div>
-
-        <div className="DSF-listing-item">
-          <div className="DSF-listing-fonts">
-            <p>PC Gamer Pro</p>
-          </div>
-          <div className="DSF-listing-price">
-            <h3>R$ 1200.00</h3>
-          </div>
-        </div>
-        
       </div>
     </>
   );

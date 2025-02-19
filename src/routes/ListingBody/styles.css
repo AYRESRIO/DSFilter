@@ -1,0 +1,7 @@
+.DSF-ListingBody-container {
+  height: auto;
+  margin-top: 20px;
+  background-color: var(--DSF-bg-tertiary);
+  border: 1px solid var(--DSF-color-secondary);
+  border-radius: 5px;
+}
