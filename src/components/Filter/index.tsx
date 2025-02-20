@@ -6,19 +6,25 @@ type FormData = {
   maxPrice?: number;
 };
 
-export default function Filter() {
+type Props = {
+  onSearch?: (formData: FormData)=> void;
+}
+
+export default function Filter({onSearch}: Props) {
   const [formData, setFormData] = useState<FormData>({});
 
-  function handleInputChange(event: any) {
+  function handleInputChange(event:  React.ChangeEvent<HTMLInputElement>) {
     const value = event.target.value;
     const name = event.target.name;
     setFormData({ ...formData, [name]: value });
   }
 
-  function handleSubmit(event: any) {
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    console.log(formData.maxPrice || 0);
-    console.log(formData.minPrice || 10000);
+    if(onSearch){
+      onSearch(formData);
+    }
   }
 
   return (
@@ -48,7 +54,7 @@ export default function Filter() {
         </div>
         <br />
         <div>
-          <button className="DSF-button">Filtrar</button>
+          <button className="DSF-button" type="submit"  >Filtrar</button>
         </div>
       </form>
     </>
