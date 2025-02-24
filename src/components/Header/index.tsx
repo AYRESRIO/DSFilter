@@ -1,3 +1,4 @@
+import CounterIcon from "../CounterIcon";
 import "./styles.css";
 
 export default function Header() {
@@ -8,9 +9,7 @@ export default function Header() {
           <h1>DSFilter</h1>
         </div>
         <div>
-          <div>
-            <h2>produto(s)</h2>
-          </div>
+          <CounterIcon />
         </div>
       </div>
     </header>

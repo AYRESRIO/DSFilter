@@ -4,20 +4,13 @@
     height: 70px;
     display: flex;
     align-items: center;
-    
-   
+}
 .DSF-header-content {
     display: flex;
     justify-content: space-between;
 }
 .DSF-header-content h1 {
     font-size: 20px;
-    padding-left: 5px;
-    
-}
-.DSF-header-content h2 {
-    font-size: 12px;
-    padding: 8px;
-    
-
+    padding: 5px;  
+    margin-top: 20px;
 }

@@ -1,0 +1,17 @@
+.DSF-counter-content {
+    font-size: 12px;
+    padding: 8px;
+    margin-top: 20px;
+    color:var( --DSF-color-primary);
+    display: flex;
+}
+.DSF-counting-products {
+    background-color: var(--DSF-bg-counter-ballon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:25px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 4%;
+}

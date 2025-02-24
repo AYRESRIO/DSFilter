@@ -1,4 +1,5 @@
 import { ProductDTO } from "../models/product";
+import * as productRepository from "../localstorage/product-repository"
 
 export function findByPrice(min: number, max: number): ProductDTO[] {
   return products
@@ -72,4 +73,14 @@ const products: ProductDTO[] = [
     name: "PC Gamer Hot",
     price: 1450.0,
   },
-];
+]
+
+export function saveProduct(products:ProductDTO){
+  productRepository.save(products);
+}
+
+export function getProduct(): ProductDTO {
+  return productRepository.get();
+}
+
+

@@ -6,6 +6,7 @@ type Props = {
 };
 
 export default function Listing({ product }: Props) {
+  
   return (
     <>
       <div>

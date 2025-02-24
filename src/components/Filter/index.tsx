@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./styles.css";
+import { ContextProductCount } from "../../utils/context-product";
+import * as productService from "../../services/product-service";
 
 type FormData = {
   minPrice?: number;
@@ -7,23 +9,31 @@ type FormData = {
 };
 
 type Props = {
-  onSearch?: (formData: FormData)=> void;
-}
+  onSearch?: (formData: FormData) => void;
+};
 
-export default function Filter({onSearch}: Props) {
+export default function Filter({ onSearch }: Props) {
+  const { setContextProductCount } = useContext(ContextProductCount);
+
   const [formData, setFormData] = useState<FormData>({});
 
-  function handleInputChange(event:  React.ChangeEvent<HTMLInputElement>) {
+  function handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
     const value = event.target.value;
     const name = event.target.name;
     setFormData({ ...formData, [name]: value });
   }
 
-
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if(onSearch){
+    if (onSearch) {
       onSearch(formData);
+    }
+  }
+
+  function handleClick() {
+    if (onSearch) {
+      onSearch(formData);
+      setContextProductCount(productService.findByPrice.length);
     }
   }
 
@@ -53,8 +63,8 @@ export default function Filter({onSearch}: Props) {
           />
         </div>
         <br />
-        <div>
-          <button className="DSF-button" type="submit"  >Filtrar</button>
+        <div onClick={handleClick}>
+          <button className="DSF-button">Filtrar</button>
         </div>
       </form>
     </>
